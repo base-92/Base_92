@@ -481,6 +481,23 @@
         }
       }
     </style>
+    <!-- Meta Pixel Code -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '1770221450722831');
+      fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=1770221450722831&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
   </head>
   <body>
     <header>
@@ -630,6 +647,21 @@
           bar.classList.toggle("show", visible.size === 0);
         });
         targets.forEach(function (t) { io.observe(t); });
+      })();
+    </script>
+    <script>
+      // Meta Pixel: conta como "Lead" cada clique para entrar no grupo do WhatsApp.
+      // É esse evento que mostra quanto custa cada entrada (e que a campanha pode otimizar depois).
+      (function () {
+        var sent = false;
+        document.querySelectorAll('a[href*="chat.whatsapp.com"]').forEach(function (link) {
+          link.addEventListener("click", function () {
+            if (sent || typeof fbq !== "function") return;   // um Lead por visita, mesmo com vários cliques
+            sent = true;
+            var where = link.closest(".hero") ? "topo" : link.closest(".sticky-cta") ? "barra fixa" : "final da página";
+            fbq("track", "Lead", {content_name: "Grupo WhatsApp BASE92", content_category: where});
+          });
+        });
       })();
     </script>
   </body>
