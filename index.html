@@ -6,9 +6,9 @@
     <meta name="theme-color" content="#080808" />
     <meta
       name="description"
-      content="BASE92: achados, ofertas e oportunidades para o universo masculino. Entre grátis no grupo de ofertas."
+      content="Quem está no grupo BASE92 já comprou com até 62% OFF hoje. Receba as próximas ofertas na hora, direto no WhatsApp. Grátis."
     />
-    <title>BASE92 | Achados • Ofertas • Oportunidades</title>
+    <title>BASE92 | Não perca a próxima oferta</title>
     <style>
       :root {
         --bg: #080808;
@@ -452,7 +452,7 @@
         grid-template-columns: 1fr;
         text-align: center;
         gap: 22px;
-        padding: 40px 0 48px;
+        padding: 28px 0 48px;
       }
       .hero-copy {
         order: 1;
@@ -462,7 +462,7 @@
       .logo-frame {
         order: 0;
         width: 62%;
-        max-width: 300px;
+        max-width: 210px;
         margin: auto;
         border-radius: 50%;
       }
@@ -480,6 +480,43 @@
           min-width: 0;
         }
       }
+
+      /* ===== Vitrine de ofertas ===== */
+      .ghost-link { display: inline-block; margin-top: 14px; color: var(--lime); font-size: 13px; font-weight: 700; letter-spacing: .5px; border-bottom: 1px solid #d7ff3855; padding-bottom: 2px; }
+      .offers { display: grid; grid-template-columns: repeat(5, 1fr); gap: 14px; }
+      .offer { position: relative; display: flex; flex-direction: column; background: #101010; border: 1px solid var(--line); border-radius: 13px; overflow: hidden; }
+      .offer-tag { position: absolute; top: 10px; left: 10px; z-index: 1; background: var(--lime); color: #0b0b0b; font-size: 10px; font-weight: 900; letter-spacing: .5px; text-transform: uppercase; padding: 5px 8px; border-radius: 5px; }
+      .offer-img { background: #fff; aspect-ratio: 1; display: flex; align-items: center; justify-content: center; }
+      .offer-img img { width: 100%; height: 100%; object-fit: contain; display: block; }
+      .offer-body { display: flex; flex-direction: column; gap: 4px; padding: 14px; flex: 1; }
+      .offer h3 { font-size: 13px; line-height: 1.35; margin: 0 0 6px; font-weight: 700; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; min-height: 3.9em; }
+      .offer-de { color: #888; font-size: 12px; }
+      .offer-de b { color: var(--green); margin-left: 4px; }
+      .offer-por { font-size: 24px; font-weight: 1000; color: var(--white); letter-spacing: -.5px; }
+      .offer-eco { color: var(--lime); font-size: 12px; font-weight: 700; }
+      .offer-extra { color: #888; font-size: 11px; margin-bottom: 10px; }
+      .offer-btn { margin-top: auto; display: block; text-align: center; background: #fff159; color: #2d3277; font-weight: 900; font-size: 12px; letter-spacing: .3px; padding: 12px 8px; border-radius: 7px; min-height: 44px; }
+      @media (hover: hover) { .offer-btn:hover { filter: brightness(1.05); } }
+      .offers-note { color: #777; font-size: 11px; text-align: center; line-height: 1.6; margin: 18px auto 0; max-width: 640px; }
+      .offers-more { display: flex; flex-direction: column; align-items: center; gap: 6px; margin-top: 10px; }
+      .offers-more .ghost { color: var(--muted); font-size: 13px; text-decoration: underline; text-underline-offset: 3px; padding: 10px; }
+      @media (max-width: 1000px) { .offers { grid-template-columns: repeat(3, 1fr); } }
+      @media (max-width: 760px) {
+        /* carrossel horizontal no celular */
+        .offers { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; gap: 10px; margin: 0 -4%; padding: 0 4% 8px; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+        .offers::-webkit-scrollbar { display: none; }
+        .offer { flex: 0 0 68%; scroll-snap-align: start; }
+        .offer-por { font-size: 22px; }
+      }
+
+      /* ===== FAQ ===== */
+      .faq { max-width: 720px; padding-top: 10px; }
+      .faq details { border-bottom: 1px solid var(--line); padding: 4px 0; }
+      .faq summary { cursor: pointer; list-style: none; padding: 16px 32px 16px 0; font-weight: 700; font-size: 15px; position: relative; }
+      .faq summary::-webkit-details-marker { display: none; }
+      .faq summary::after { content: "+"; position: absolute; right: 4px; top: 12px; color: var(--lime); font-size: 22px; }
+      .faq details[open] summary::after { content: "–"; }
+      .faq details p { color: #aaa; font-size: 14px; line-height: 1.6; margin: 0 0 16px; }
     </style>
     <!-- Meta Pixel Code -->
     <script>
@@ -509,16 +546,16 @@
     <main>
       <div class="wrap hero">
         <div class="hero-copy">
-          <div class="eyebrow">O universo masculino em um só lugar</div>
-          <h1>SEU PRÓXIMO<br /><em>ACHADO</em> COMEÇA AQUI.</h1>
+          <div class="eyebrow">🚨 Você já perdeu ofertas hoje</div>
+          <h1>QUEM ESTÁ NO GRUPO<br /><em>JÁ COMPROU.</em><br />VOCÊ AINDA NÃO.</h1>
           <p>
-            Ofertas selecionadas, produtos úteis e oportunidades que valem a
-            pena. Tudo em um só lugar, direto no seu WhatsApp.
+            Tênis com 62% OFF, fone com 58% OFF… tudo isso passou no grupo
+            hoje. Entra agora para não perder a próxima.
           </p>
-          <a class="cta" href="https://chat.whatsapp.com/KR3ObE4spQt0azL78FbBX9?s=cl&p=i&iam=2" target="_blank" rel="noopener noreferrer" aria-label="Entrar no grupo BASE92 pelo WhatsApp">＋ QUERO ENTRAR NO GRUPO</a
+          <a class="cta" href="https://chat.whatsapp.com/KR3ObE4spQt0azL78FbBX9?s=cl&p=i&iam=2" target="_blank" rel="noopener noreferrer" aria-label="Entrar no grupo BASE92 pelo WhatsApp">🚨 NÃO QUERO PERDER MAIS NENHUMA</a
           ><span class="micro"
-            >Gratuito • Ofertas atualizadas • Sem complicação</span
-          >
+            >Grátis • Ofertas na hora • Sai quando quiser</span
+          ><a class="ghost-link" href="#ofertas">Ver o que você perdeu hoje ↓</a>
         </div>
         <div class="logo-frame">
           <img
@@ -532,79 +569,166 @@
         </div>
       </div>
       <div class="strip">
-        ACHADOS &nbsp; • &nbsp; OFERTAS &nbsp; • &nbsp; OPORTUNIDADES
+        🚨 PASSOU HOJE: &nbsp; 62% OFF &nbsp; • &nbsp; 58% OFF &nbsp; • &nbsp; 50% OFF
       </div>
+      <section class="wrap" id="ofertas">
+        <div class="section-head">
+          <span class="eyebrow">#publi • Passou no grupo hoje</span>
+          <h2>Você perdeu essas.</h2>
+          <p>Mas amanhã tem mais. Quem está no grupo recebe na hora.</p>
+        </div>
+        <div class="offers">
+          <article class="offer">
+            <span class="offer-tag">⚡ Oferta relâmpago</span>
+            <div class="offer-img"><img src="https://http2.mlstatic.com/D_Q_NP_2X_730568-MLA99983575997_112025-V.webp" alt="Fone Bluetooth Soundcore by Anker P20i — 30h de bateria, resistente à água" width="400" height="400" loading="lazy" decoding="async" referrerpolicy="no-referrer" /></div>
+            <div class="offer-body">
+              <h3>Fone Bluetooth Soundcore by Anker P20i — 30h de bateria, resistente à água</h3>
+              <div class="offer-de">De <s>R$ 299,00</s> <b>58% OFF</b></div>
+              <div class="offer-por">R$ 125,00</div>
+              <div class="offer-eco">Economia de R$ 174,00</div>
+              <div class="offer-extra">Frete grátis • 4.8★</div>
+              <a class="offer-btn" href="https://meli.la/2B6o5R8" target="_blank" rel="noopener sponsored" data-offer="Fone Bluetooth Soundcore by Anker P20i — 30h de bateria, resistente à água" data-price="125.00">VER OFERTA ↗</a>
+            </div>
+          </article>
+          <article class="offer">
+            <span class="offer-tag">Oferta imperdível</span>
+            <div class="offer-img"><img src="https://http2.mlstatic.com/D_Q_NP_2X_874316-MLB120150430199_102026-V.webp" alt="Tênis Esportivo Plataforma Casual Sneaker Confortável — Preto" width="400" height="400" loading="lazy" decoding="async" referrerpolicy="no-referrer" /></div>
+            <div class="offer-body">
+              <h3>Tênis Esportivo Plataforma Casual Sneaker Confortável — Preto</h3>
+              <div class="offer-de">De <s>R$ 558,60</s> <b>62% OFF no Pix</b></div>
+              <div class="offer-por">R$ 209,99</div>
+              <div class="offer-eco">Economia de R$ 348,61</div>
+              <div class="offer-extra">Frete grátis • +100 vendidos</div>
+              <a class="offer-btn" href="https://meli.la/26bjnmj" target="_blank" rel="noopener sponsored" data-offer="Tênis Esportivo Plataforma Casual Sneaker Confortável — Preto" data-price="209.99">VER OFERTA ↗</a>
+            </div>
+          </article>
+          <article class="offer">
+            <span class="offer-tag">Mais vendido</span>
+            <div class="offer-img"><img src="https://http2.mlstatic.com/D_Q_NP_2X_603981-MLA115262802698_082026-V.webp" alt="Creatina Monohidratada 1kg 100% Pura — Dark Lab" width="400" height="400" loading="lazy" decoding="async" referrerpolicy="no-referrer" /></div>
+            <div class="offer-body">
+              <h3>Creatina Monohidratada 1kg 100% Pura — Dark Lab</h3>
+              <div class="offer-de">De <s>R$ 159,90</s> <b>50% OFF</b></div>
+              <div class="offer-por">R$ 78,92</div>
+              <div class="offer-eco">Economia de R$ 80,98</div>
+              <div class="offer-extra">Frete grátis • 4.9★ • +750 mil vendidos</div>
+              <a class="offer-btn" href="https://meli.la/1HfFn4F" target="_blank" rel="noopener sponsored" data-offer="Creatina Monohidratada 1kg 100% Pura — Dark Lab" data-price="78.92">VER OFERTA ↗</a>
+            </div>
+          </article>
+          <article class="offer">
+            <span class="offer-tag">Mais vendido</span>
+            <div class="offer-img"><img src="https://http2.mlstatic.com/D_Q_NP_2X_648315-MLA113252989356_072026-V.webp" alt="Parafusadeira e Furadeira a Bateria The Black Tools TB12A 3/8" width="400" height="400" loading="lazy" decoding="async" referrerpolicy="no-referrer" /></div>
+            <div class="offer-body">
+              <h3>Parafusadeira e Furadeira a Bateria The Black Tools TB12A 3/8</h3>
+              <div class="offer-de">De <s>R$ 119,90</s> <b>41% OFF</b></div>
+              <div class="offer-por">R$ 69,90</div>
+              <div class="offer-eco">Economia de R$ 50,00</div>
+              <div class="offer-extra">Frete grátis • 4.8★ • +250 mil vendidos</div>
+              <a class="offer-btn" href="https://meli.la/2MQChwG" target="_blank" rel="noopener sponsored" data-offer="Parafusadeira e Furadeira a Bateria The Black Tools TB12A 3/8" data-price="69.90">VER OFERTA ↗</a>
+            </div>
+          </article>
+          <article class="offer">
+            <span class="offer-tag">Mais vendido</span>
+            <div class="offer-img"><img src="https://http2.mlstatic.com/D_Q_NP_2X_739772-MLA106137754634_022026-V.webp" alt="Luva de Boxe Muay Thai Kickboxing BKS — Branca 8oz" width="400" height="400" loading="lazy" decoding="async" referrerpolicy="no-referrer" /></div>
+            <div class="offer-body">
+              <h3>Luva de Boxe Muay Thai Kickboxing BKS — Branca 8oz</h3>
+              <div class="offer-de">De <s>R$ 153,83</s> <b>48% OFF</b></div>
+              <div class="offer-por">R$ 78,99</div>
+              <div class="offer-eco">Economia de R$ 74,84</div>
+              <div class="offer-extra">Frete grátis • 4.8★</div>
+              <a class="offer-btn" href="https://meli.la/2Y32Zuk" target="_blank" rel="noopener sponsored" data-offer="Luva de Boxe Muay Thai Kickboxing BKS — Branca 8oz" data-price="78.99">VER OFERTA ↗</a>
+            </div>
+          </article>
+        </div>
+        <p class="offers-note">Preços vistos nas lojas em 23/11/2026. Preço e estoque podem mudar a qualquer momento. Links de afiliado das lojas parceiras: você paga o mesmo e a BASE92 pode receber uma comissão.</p>
+        <div class="offers-more">
+          <a class="cta" href="https://chat.whatsapp.com/KR3ObE4spQt0azL78FbBX9?s=cl&p=i&iam=2" target="_blank" rel="noopener noreferrer" aria-label="Entrar no grupo BASE92 pelo WhatsApp">🚨 QUERO PEGAR AS PRÓXIMAS</a>
+          <a class="ghost" href="https://meli.la/26bjnmj" target="_blank" rel="noopener sponsored" data-offer="Perfil BASE92">Ver mais ofertas que passaram no grupo ↗</a>
+        </div>
+      </section>
+
       <section class="wrap">
         <div class="section-head">
-          <span class="eyebrow">O que você encontra por aqui</span>
-          <h2>Uma BASE de boas oportunidades.</h2>
-          <p>Do estilo à tecnologia, sem perder tempo procurando.</p>
+          <span class="eyebrow">O que chega no grupo</span>
+          <h2>O que você já ia comprar, só que mais barato.</h2>
+          <p>Categorias escolhidas a dedo. Nada de bugiganga aleatória.</p>
         </div>
         <div class="grid">
           <article class="tile">
             <div class="ico">👕</div>
             <h3>Moda masculina</h3>
-            <p>Roupas, acessórios e peças para o dia a dia.</p>
+            <p>Camisetas, bermudas, jaquetas e básicos de marca.</p>
           </article>
           <article class="tile">
             <div class="ico">👟</div>
             <h3>Tênis & calçados</h3>
-            <p>Estilo, conforto e bons preços.</p>
+            <p>Casual e esportivo, com desconto de verdade.</p>
           </article>
           <article class="tile">
             <div class="ico">⌚</div>
             <h3>Relógios & acessórios</h3>
-            <p>Detalhes que fazem diferença.</p>
+            <p>Relógios, carteiras, óculos e bonés.</p>
           </article>
           <article class="tile">
             <div class="ico">🎧</div>
             <h3>Tecnologia</h3>
-            <p>Eletrônicos, gadgets e utilidades.</p>
+            <p>Fones, smartwatches, carregadores e gadgets.</p>
           </article>
           <article class="tile">
             <div class="ico">🧰</div>
             <h3>Ferramentas & utilidades</h3>
-            <p>Achados para casa, trabalho e projetos.</p>
+            <p>Parafusadeiras, kits e utilidades para casa.</p>
           </article>
           <article class="tile">
             <div class="ico">🚘</div>
             <h3>Automotivo</h3>
-            <p>Acessórios e produtos para seu veículo.</p>
+            <p>Acessórios, limpeza e cuidados com o carro e a moto.</p>
           </article>
         </div>
       </section>
       <section class="wrap">
         <div class="section-head">
-          <span class="eyebrow">Por que entrar?</span>
-          <h2>Menos procura. Mais oportunidade.</h2>
+          <span class="eyebrow">Por que entrar</span>
+          <h2>A gente procura. Você economiza.</h2>
         </div>
         <div class="benefits">
           <div class="benefit">
-            <b>Ofertas em um só lugar</b
+            <b>Garimpo todo dia</b
             ><span
-              >Praticidade para encontrar oportunidades de várias
-              categorias.</span
+              >Comparamos produtos parecidos e mandamos só o melhor preço,
+              para você não perder tempo rolando a tela.</span
             >
           </div>
           <div class="benefit">
-            <b>Links direto no WhatsApp</b
-            ><span>Veja a oferta e acesse a loja pelo próprio celular.</span>
+            <b>Link direto, sem enrolação</b
+            ><span>Um toque e você cai direto na página oficial do produto na
+              loja. Sem cadastro, sem intermediário.</span>
           </div>
           <div class="benefit">
-            <b>Entrada gratuita</b
+            <b>Grátis e sem compromisso</b
             ><span
-              >Você participa sem pagar mensalidade e acompanha quando
-              quiser.</span
+              >Não custa nada, não pede cadastro. Silencie o grupo e olhe
+              quando quiser, ou saia com um toque.</span
             >
           </div>
         </div>
       </section>
+      <section class="wrap faq">
+        <div class="section-head">
+          <span class="eyebrow">Dúvidas rápidas</span>
+          <h2>Antes de entrar</h2>
+        </div>
+        <details><summary>É grátis mesmo?</summary><p>Sim. Não tem mensalidade nem cadastro. Você entra pelo link do WhatsApp e pronto.</p></details>
+        <details><summary>Vou ser obrigado a comprar algo?</summary><p>Não. Você vê as ofertas e compra só se quiser. Nada é cobrado por estar no grupo.</p></details>
+        <details><summary>Os links são seguros?</summary><p>Todos levam direto para a página oficial do produto na loja. A compra é feita lá, do jeito que você já compra normalmente.</p></details>
+        <details><summary>E se eu não quiser mais?</summary><p>Você pode silenciar o grupo e olhar quando quiser, ou sair a qualquer momento com um toque.</p></details>
+        <details><summary>Por que vocês divulgam ofertas?</summary><p>Os links são de afiliado: quando você compra, paga o mesmo preço e a BASE92 pode receber uma pequena comissão. É isso que mantém o grupo gratuito.</p></details>
+      </section>
       <div class="wrap join" id="entrar">
-        <span class="eyebrow">BASE92 • Grupo oficial</span>
-        <h2>Faça parte da BASE.</h2>
+        <span class="eyebrow">🚨 Última chamada</span>
+        <h2>Não fique de fora de novo.</h2>
         <p>
-          Entre gratuitamente no grupo e receba achados, ofertas e oportunidades
-          selecionadas.
+          A próxima oferta pode chegar a qualquer momento, e quem está no grupo
+          vê primeiro. Entra agora, é de graça.
         </p>
         <a
           class="cta"
@@ -612,11 +736,12 @@
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Entrar no grupo BASE92 pelo WhatsApp"
-          >↗ ENTRAR NO GRUPO DO WHATSAPP</a
+          >🚨 ENTRAR NO GRUPO AGORA</a
         >
         <div class="fine">
-          Ao entrar, você concorda em receber mensagens e ofertas no grupo.
-          Links podem ser de afiliados.
+          Ao entrar, você concorda em receber ofertas no grupo. #publi: os links
+          são de afiliado, você paga o mesmo preço e a BASE92 pode receber uma
+          comissão.
         </div>
       </div>
     </main>
@@ -628,13 +753,13 @@
         target="_blank"
         rel="noopener noreferrer"
         tabindex="-1"
-        >＋ ENTRAR GRÁTIS NO GRUPO</a
+        >🚨 NÃO PERDER A PRÓXIMA</a
       >
     </div>
     <script>
       (function () {
         var bar = document.getElementById("stickyCta");
-        var targets = document.querySelectorAll(".hero .cta, #entrar .cta");
+        var targets = document.querySelectorAll(".hero .cta, #entrar .cta, #ofertas .cta");
         if (!bar || !("IntersectionObserver" in window)) {
           if (bar) bar.classList.add("show");
           return;
@@ -655,14 +780,30 @@
       (function () {
         var sent = false;
         document.querySelectorAll('a[href*="chat.whatsapp.com"]').forEach(function (link) {
-          link.addEventListener("click", function () {
+          link.addEventListener("click", function (ev) {
             if (sent || typeof fbq !== "function") return;   // um Lead por visita, mesmo com vários cliques
             sent = true;
-            var where = link.closest(".hero") ? "topo" : link.closest(".sticky-cta") ? "barra fixa" : "final da página";
+            // No navegador do Instagram/Facebook o WhatsApp abre na hora e a página é congelada
+            // antes do Pixel enviar o evento. Seguramos a ida ao grupo por 400 ms para o Lead sair.
+            ev.preventDefault();
+            var href = link.href;
+            setTimeout(function () { window.location.href = href; }, 400);
+            var where = link.closest(".hero") ? "topo" : link.closest(".sticky-cta") ? "barra fixa" : link.closest("#ofertas") ? "vitrine" : "final da página";
             fbq("track", "Lead", {content_name: "Grupo WhatsApp BASE92", content_category: where});
           });
         });
       })();
+    </script>
+    <script>
+      // Meta Pixel: clique em oferta (evento personalizado "OfertaClick") — mostra quais produtos chamam atenção.
+      document.querySelectorAll("a[data-offer]").forEach(function (link) {
+        link.addEventListener("click", function () {
+          if (typeof fbq !== "function") return;
+          var data = {content_name: link.dataset.offer};
+          if (link.dataset.price) { data.value = Number(link.dataset.price); data.currency = "BRL"; }
+          fbq("trackCustom", "OfertaClick", data);
+        });
+      });
     </script>
   </body>
 </html>
